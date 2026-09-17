@@ -1,0 +1,25 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files — too large for git, and not yours to redistribute
+*.csv
+Matched_WQ_S2_1.csv
+Matched_WQ_S2_2.csv
+combined_usable.csv
+
+# Trained models — can be large; regenerate from notebook instead of tracking
+*.pkl
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
