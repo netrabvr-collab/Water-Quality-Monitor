@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f096eb9b3676aecdd59fe2f967724207 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f096eb9b3676aecdd59fe2f967724207" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f096eb9b3676aecdd59fe2f967724207 = L.map(
+                "map_f096eb9b3676aecdd59fe2f967724207",
+                {
+                    center: [43.16839083, -105.56965629999999],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e62848cbddc921d60e4912a888e726f2 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "CartoDB",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e62848cbddc921d60e4912a888e726f2.addTo(map_f096eb9b3676aecdd59fe2f967724207);
+        
+    
+            var circle_marker_b508787eebd2d1972183a882913ca266 = L.circleMarker(
+                [43.99818166, -122.9059126],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_f096eb9b3676aecdd59fe2f967724207);
+        
+    
+        var popup_6151130790d59579b21fa7dfb4fabf63 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_218e023f565ee2caf3cc59a65128f376 = $(`<div id="html_218e023f565ee2caf3cc59a65128f376" style="width: 100.0%; height: 100.0%;">         <b>Willamette River, OR</b><br>         <b>Status:</b> Moderate<br>         <b>Turbidity:</b> 6.0 FNU<br>         <b>Risk Score:</b> 39.0/100<br>         <b>Date:</b> 2023-07-19         </div>`)[0];
+                popup_6151130790d59579b21fa7dfb4fabf63.setContent(html_218e023f565ee2caf3cc59a65128f376);
+            
+        
+
+        circle_marker_b508787eebd2d1972183a882913ca266.bindPopup(popup_6151130790d59579b21fa7dfb4fabf63)
+        ;
+
+        
+    
+    
+            var circle_marker_b01e338f6465e4d86117d529d432a391 = L.circleMarker(
+                [42.3386, -88.2334],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_f096eb9b3676aecdd59fe2f967724207);
+        
+    
+        var popup_33679b984b53ac9f1a83106549abe96d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d8b541bd6e9607f07c811e31369adb8a = $(`<div id="html_d8b541bd6e9607f07c811e31369adb8a" style="width: 100.0%; height: 100.0%;">         <b>Fox River, IL</b><br>         <b>Status:</b> Moderate<br>         <b>Turbidity:</b> 16.8 FNU<br>         <b>Risk Score:</b> 67.3/100<br>         <b>Date:</b> 2023-08-28         </div>`)[0];
+                popup_33679b984b53ac9f1a83106549abe96d.setContent(html_d8b541bd6e9607f07c811e31369adb8a);
+            
+        
+
+        circle_marker_b01e338f6465e4d86117d529d432a391.bindPopup(popup_33679b984b53ac9f1a83106549abe96d)
+        ;
+
+        
+    
+</script>
+</html>
