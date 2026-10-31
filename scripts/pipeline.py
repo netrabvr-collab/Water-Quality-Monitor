@@ -10,6 +10,9 @@ import ee
 import joblib
 import numpy as np
 import pandas as pd
+from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).resolve().parent
 
 EE_PROJECT_ID = "water-quality-monitor-509313"
 
@@ -31,14 +34,20 @@ def init_earth_engine(project_id=EE_PROJECT_ID):
 
 
 def load_artifacts(
-    model_path="turbidity_model_gee.pkl",
-    features_path="turbidity_features_gee.pkl",
-    reference_path="turbidity_reference.pkl",
+    model_path=None,
+    features_path=None,
+    reference_path=None,
 ):
     """Returns (model, feature_cols, training_reference)."""
+
+    model_path = model_path or SCRIPT_DIR / "turbidity_model_gee.pkl"
+    features_path = features_path or SCRIPT_DIR / "turbidity_features_gee.pkl"
+    reference_path = reference_path or SCRIPT_DIR / "turbidity_reference.pkl"
+
     model = joblib.load(model_path)
     feature_cols = joblib.load(features_path)
     reference = joblib.load(reference_path)
+
     return model, feature_cols, reference
 
 
